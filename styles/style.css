@@ -18,3 +18,12 @@
     width: 200px;
     height: 200px;
 }
+
+.character-creation-form {
+    max-width: 20%;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}

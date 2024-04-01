@@ -9,36 +9,41 @@
 </head>
 
 <body>
-    <form id="create-character" action="GET">
-        <div>
+    <form id="create-character" class="character-creation-form" action="GET">
+
+        <div class="form-row">
             <label for="name-input">Name</label>
-            <input id="name-input" type="text" name="name" placeholder="Name">
+            <input id="name-input" type="text" name="name" placeholder="Name" />
         </div>
-        <div>
+
+        <div class="form-row">
             <label for="max-health-input">Max Health</label>
-            <input id="max-health-input" type="number" min="1" name="maxHealth" placeholder="Max Health">
+            <input id="max-health-input" type="number" min="1" name="maxHealth" placeholder="Max Health" />
         </div>
-        <div>
+
+        <!-- <div class="form-row">
             <label for="image-input">Image from SVG</label>
             <textarea id="image-input" name="image" cols="50" rows="1" placeholder="Image"></textarea>
-        </div>
+        </div> -->
 
-        <div>
-            <label for="image-input">Image from file</label>
-            <input id="image-file-input" type="file" name="image-file" />
-        </div>
-
-        <div>
+        <div class="form-row">
             <label for="heal-boost-input">Heal Boost</label>
-            <input id="heal-boost-input" type="number" name="healBoost" placeholder="Heal Boost">
+            <input id="heal-boost-input" type="number" name="healBoost" placeholder="Heal Boost" />
         </div>
-        <div>
+
+        <div class="form-row">
             <label for="shield-boost-input">Shield Boost</label>
-            <input id="shield-boost-input" type="number" name="shieldBoost" placeholder="Shield Boost">
+            <input id="shield-boost-input" type="number" name="shieldBoost" placeholder="Shield Boost" />
         </div>
-        <div>
+
+        <div class="form-row">
             <label for="thorns-boost-input">Thorns</label>
-            <input id="thorns-boost-input" type="number" name="thorns" placeholder="Thorns">
+            <input id="thorns-boost-input" type="number" name="thorns" placeholder="Thorns" />
+        </div>
+        
+        <div class="form-row">
+            <label for="image-input">Image from file</label>
+            <input id="image-file-input" type="file" name="image" />
         </div>
 
         <button type="submit">Create character</button>
@@ -47,9 +52,6 @@
     <div class="allies"></div>
     <div class="enemies"></div>
 
-    <script src="./scripts/imageToBase64.js"></script>
-
-    
     <script src="./scripts/characters.js"></script>
     <script src="./scripts/draw.js"></script>
     <script src="./scripts/characterCreation.js"></script>

@@ -39,10 +39,10 @@ function createCharacterDom(character) {
     name.className = "name";
     container.appendChild(name);
 
-    let svg = document.createElement("svg");
-    svg.innerHTML = character.image;
-    svg.className = "image";
-    container.appendChild(svg);
+    let img = document.createElement("img");
+    img.src = character.image;
+    img.className = "image";
+    container.appendChild(img);
 
     let healthContainer = document.createElement("div");
     healthContainer.className = "health-container";
