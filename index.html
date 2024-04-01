@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <form id="create-character" action="GET">
+        <div>
+            <label for="name-input">Name</label>
+            <input id="name-input" type="text" name="name" placeholder="Name">
+        </div>
+        <div>
+            <label for="max-health-input">Max Health</label>
+            <input id="max-health-input" type="number" min="1" name="maxHealth" placeholder="Max Health">
+        </div>
+        <div>
+            <label for="image-input">Image from SVG</label>
+            <textarea id="image-input" name="image" cols="50" rows="1" placeholder="Image"></textarea>
+        </div>
+
+        <div>
+            <label for="image-input">Image from file</label>
+            <input id="image-file-input" type="file" name="image-file" />
+        </div>
+
+        <div>
+            <label for="heal-boost-input">Heal Boost</label>
+            <input id="heal-boost-input" type="number" name="healBoost" placeholder="Heal Boost">
+        </div>
+        <div>
+            <label for="shield-boost-input">Shield Boost</label>
+            <input id="shield-boost-input" type="number" name="shieldBoost" placeholder="Shield Boost">
+        </div>
+        <div>
+            <label for="thorns-boost-input">Thorns</label>
+            <input id="thorns-boost-input" type="number" name="thorns" placeholder="Thorns">
+        </div>
+
+        <button type="submit">Create character</button>
+    </form>
+
+    <div class="allies"></div>
+    <div class="enemies"></div>
+
+    <script src="./scripts/imageToBase64.js"></script>
+
+    
+    <script src="./scripts/characters.js"></script>
+    <script src="./scripts/draw.js"></script>
+    <script src="./scripts/characterCreation.js"></script>
+
+</body>
+
+</html>

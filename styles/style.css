@@ -1,0 +1,20 @@
+.character {
+    display: flex;
+    gap: 3px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    justify-content: space-around;
+}
+
+.character.selected {
+    border: 1px solid red;
+}
+
+.character .health-container {
+    display: flex;
+}
+
+.character .image {
+    width: 200px;
+    height: 200px;
+}
